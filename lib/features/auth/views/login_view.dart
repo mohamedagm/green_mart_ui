@@ -6,6 +6,7 @@ import 'package:green_mart/core/theme/app_text_styles.dart';
 import 'package:green_mart/core/widgets/app_button.dart';
 import 'package:green_mart/core/widgets/app_password_form_field.dart';
 import 'package:green_mart/core/widgets/app_text_form_field.dart';
+import 'package:green_mart/features/auth/views/number_view.dart';
 import 'package:green_mart/features/auth/views/register_view.dart';
 import 'package:svg_flutter/svg.dart';
 
