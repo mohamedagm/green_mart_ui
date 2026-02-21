@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:green_mart/core/constants/app_assets.dart';
+import 'package:green_mart/core/functions/nav.dart';
 import 'package:green_mart/core/theme/app_colors.dart';
 import 'package:green_mart/core/theme/app_text_styles.dart';
 import 'package:green_mart/core/widgets/app_button.dart';
+import 'package:green_mart/features/auth/views/login_view.dart';
 import 'package:svg_flutter/svg.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -52,11 +54,10 @@ class WelcomeScreen extends StatelessWidget {
 
                 AppButton(
                   onPressed: () {
-                    //     pushReplacement(context, LoginScreen());
+                    pushReplacement(context, LoginScreen());
                   },
                   height: 65,
                   width: double.infinity,
-                  backgroundColor: AppColors.primaryColor,
                   textStyle: AppTextStyles.subtitle.copyWith(
                     color: AppColors.backgroundColor,
                   ),

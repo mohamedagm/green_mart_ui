@@ -10,11 +10,11 @@ class AppButton extends StatelessWidget {
     this.bgColor = AppColors.primaryColor,
     this.height = 55,
     this.width = double.infinity,
-    this.textStyle, required Color backgroundColor,
+    this.textStyle,
   });
   final String text;
   final Function() onPressed;
-  final Color bgColor;
+  final Color? bgColor;
   final double height;
   final double width;
   final TextStyle? textStyle;
