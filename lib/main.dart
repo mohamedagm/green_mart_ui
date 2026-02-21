@@ -9,6 +9,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Scaffold());
+    return MaterialApp(
+      home: Scaffold(
+        body: Text('hello', style: TextStyle(fontFamily: 'Poppins')),
+      ),
+    );
   }
 }
