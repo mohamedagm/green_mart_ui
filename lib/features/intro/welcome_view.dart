@@ -54,7 +54,7 @@ class WelcomeScreen extends StatelessWidget {
 
                 AppButton(
                   onPressed: () {
-                    pushReplacement(context, LoginScreen());
+                    pushReplacement(context, LoginView());
                   },
                   height: 65,
                   width: double.infinity,
