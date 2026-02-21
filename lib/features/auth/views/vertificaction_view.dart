@@ -3,6 +3,7 @@ import 'package:green_mart/core/functions/nav.dart';
 import 'package:green_mart/core/theme/app_colors.dart';
 import 'package:green_mart/core/theme/app_text_styles.dart';
 import 'package:green_mart/core/widgets/app_button.dart';
+import 'package:green_mart/features/main/main_app_view.dart';
 import 'package:pinput/pinput.dart';
 
 class VertificationView extends StatelessWidget {
@@ -35,13 +36,7 @@ class VertificationView extends StatelessWidget {
               ),
               SizedBox(height: 32),
               Center(
-                child: Pinput(
-                  keyboardType: TextInputType.number,
-                  length: 5,
-                  onCompleted: (value) {
-                    print(value);
-                  },
-                ),
+                child: Pinput(keyboardType: TextInputType.number, length: 5),
               ),
               SizedBox(height: 32),
               Row(
@@ -70,7 +65,7 @@ class VertificationView extends StatelessWidget {
               AppButton(
                 text: "Confirm",
                 onPressed: () {
-                  pushTo(context, VertificationView());
+                  pushReplacement(context, MainAppView());
                 },
               ),
             ],

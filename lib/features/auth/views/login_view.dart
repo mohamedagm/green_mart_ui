@@ -8,6 +8,7 @@ import 'package:green_mart/core/widgets/app_password_form_field.dart';
 import 'package:green_mart/core/widgets/app_text_form_field.dart';
 import 'package:green_mart/features/auth/views/number_view.dart';
 import 'package:green_mart/features/auth/views/register_view.dart';
+import 'package:green_mart/features/main/main_app_view.dart';
 import 'package:svg_flutter/svg.dart';
 
 class LoginView extends StatefulWidget {
@@ -100,7 +101,9 @@ class _LoginViewState extends State<LoginView> {
                   SizedBox(height: 40),
                   AppButton(
                     onPressed: () {
-                      if (_globalKey.currentState!.validate()) {}
+                      if (_globalKey.currentState!.validate()) {
+                        pushReplacement(context, MainAppView());
+                      }
                     },
                     text: "Login",
                   ),
