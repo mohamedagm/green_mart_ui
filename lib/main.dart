@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:green_mart/features/intro/splash_view.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,10 +10,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Text('hello', style: TextStyle(fontFamily: 'Poppins')),
-      ),
-    );
+    return MaterialApp(home: Scaffold(body: SplashScreen()));
   }
 }
