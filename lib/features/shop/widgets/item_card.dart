@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:green_mart/core/functions/nav.dart';
 import 'package:green_mart/core/theme/app_colors.dart';
 import 'package:green_mart/core/theme/app_text_styles.dart';
+import 'package:green_mart/features/details/details_view.dart';
 import 'package:green_mart/features/shop/data/product_model.dart';
 
 class ItemCard extends StatelessWidget {
-  const ItemCard({super.key, required this.productModel, this.onTap});
+  const ItemCard({super.key, required this.productModel});
   final ProductModel productModel;
-  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTap,
+      onTap: () {
+        pushTo(context, DetailsView(productModel: productModel));
+      },
       child: Container(
         width: 160,
         margin: EdgeInsets.symmetric(vertical: 8),

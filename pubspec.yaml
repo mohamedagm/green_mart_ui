@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_rating_bar: ^4.0.1
   pinput: ^6.0.2
   svg_flutter: ^0.0.1
 
