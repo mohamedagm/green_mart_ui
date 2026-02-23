@@ -155,3 +155,11 @@ List<ProductModel> allProductsList = [
         "Bananas are nutritious. Bananas may be good for energy boost. Bananas may be good for your heart. As part of a healthful and varied diet.",
   ),
 ];
+
+List<ProductModel> getproductsBySearchQuery(String query) {
+  return allProductsList
+      .where(
+        (product) => product.name.toLowerCase().contains(query.toLowerCase()),
+      )
+      .toList();
+}
