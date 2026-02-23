@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:green_mart/core/theme/app_theme.dart';
 import 'package:green_mart/features/intro/splash_view.dart';
+import 'package:green_mart/features/main/main_app_view.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,7 +14,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: AppThemes.light,
-      home: Scaffold(body: SplashScreen()),
+      home: Scaffold(body: MainAppView()),
     );
   }
 }

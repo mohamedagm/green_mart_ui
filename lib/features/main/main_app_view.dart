@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:green_mart/core/constants/app_assets.dart';
 import 'package:green_mart/core/theme/app_colors.dart';
 import 'package:green_mart/core/widgets/srcin_svg_picture.dart';
+import 'package:green_mart/features/explore/views/explore_view.dart';
 import 'package:green_mart/features/shop/views/shop_view.dart';
 import 'package:svg_flutter/svg.dart';
 
@@ -13,9 +14,9 @@ class MainAppView extends StatefulWidget {
 }
 
 int currentIndex = 0;
-List<Widget> views = [
+List<Widget> viewsww = [
   ShopView(),
-  Text('ExploreScreen'),
+  ExploreView(),
   Text('CartScreen'),
   Text('FavouriteScreen'),
   Text('ProfileScreen'),
@@ -25,7 +26,7 @@ class _MainAppViewState extends State<MainAppView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: views[currentIndex],
+      body: viewsww[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
         onTap: (index) {

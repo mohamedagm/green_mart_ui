@@ -4,6 +4,7 @@ class AppAssets {
   static const String userSvg = 'assets/icons/user.svg';
   static const String exploreSvg = 'assets/icons/explore.svg';
   static const String cartSvg = 'assets/icons/cart.svg';
+  static const String filterSvg = 'assets/icons/filter.svg';
 
   static const String logoSvg = 'assets/images/logo.svg';
   static const String welcome = 'assets/images/welcome.png';
@@ -15,4 +16,6 @@ class AppAssets {
   static const String dairyEggs = 'assets/images/dairy_eggs.png';
   static const String fruitsVegetable = 'assets/images/fruits.png';
   static const String meatAndFish = 'assets/images/meat_and_fish.png';
+  static const String frozenFoods = 'assets/images/frozen_foods.png';
+  static const String breakfast = 'assets/images/breakfast.jpg';
 }
