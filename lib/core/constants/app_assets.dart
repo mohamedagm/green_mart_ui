@@ -5,6 +5,7 @@ class AppAssets {
   static const String exploreSvg = 'assets/icons/explore.svg';
   static const String cartSvg = 'assets/icons/cart.svg';
   static const String filterSvg = 'assets/icons/filter.svg';
+  static const String paymentIcon = 'assets/images/payment_icon.png';
 
   static const String logoSvg = 'assets/images/logo.svg';
   static const String welcome = 'assets/images/welcome.png';

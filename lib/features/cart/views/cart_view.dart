@@ -5,6 +5,7 @@ import 'package:green_mart/core/widgets/app_button.dart';
 import 'package:green_mart/features/cart/data/cart_model.dart';
 import 'package:green_mart/features/cart/data/dummy_data.dart';
 import 'package:green_mart/features/cart/widgets/cart_item.dart';
+import 'package:green_mart/features/cart/widgets/check_out_sheet.dart';
 
 class CartView extends StatefulWidget {
   const CartView({super.key});
@@ -51,7 +52,17 @@ class _CartViewState extends State<CartView> {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(20),
         child: AppButton(
-          onPressed: () {},
+          onPressed: () {
+            if (_totalPrice > 0) {
+              showModalBottomSheet(
+                isScrollControlled: true,
+                context: context,
+                builder: (context) {
+                  return CheckoutBottomSheet(totalPrice: _totalPrice);
+                },
+              );
+            }
+          },
           text: 'Go to Checkout   \$${_totalPrice.toStringAsFixed(2)}',
           height: 65,
           width: double.infinity,
