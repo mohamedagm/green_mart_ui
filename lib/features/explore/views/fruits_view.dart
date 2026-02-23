@@ -48,11 +48,7 @@ class _FruitsViewState extends State<FruitsView> {
         itemBuilder: (context, index) {
           final product = allProductsList[index];
 
-          return ItemCard(
-            productModel: product,
-            // onTap: () =>
-            //     pushTo(context, ProductDetailScreen(productModel: product)),
-          );
+          return ItemCard(productModel: product);
         },
       ),
     );

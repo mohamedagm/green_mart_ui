@@ -35,9 +35,6 @@ class ExploreView extends StatelessWidget {
                 ),
                 itemBuilder: (context, index) {
                   return ExploreItem(
-                    // onTap: () {
-                    //   pushTo(context, exploreCategories[index].destination);
-                    // },
                     exploreCategoryModel: exploreCategories[index],
                   );
                 },
